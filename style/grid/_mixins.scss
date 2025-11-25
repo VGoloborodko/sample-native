@@ -21,7 +21,12 @@
 // Ряд сетки
 @mixin row {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   flex-wrap: wrap;
+  min-width: 100%;
+  margin-left: -$grid-gap-side;
+  margin-right: -$grid-gap-side;
 }
 
 // Колонка
